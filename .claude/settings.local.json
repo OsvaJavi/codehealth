@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(claude-api)",
+      "Skill(claude-api:*)",
+      "Bash(New-Item -ItemType Directory -Force -Path \"C:\\\\Users\\\\Personal\\\\codehealth\\\\agente-codigo\\\\examples\")",
+      "Bash(Out-Null)",
+      "Bash(Write-Output \"Directories created\")"
+    ]
+  }
+}
