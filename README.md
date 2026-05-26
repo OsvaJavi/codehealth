@@ -2,7 +2,7 @@
 
 An AI agent that analyzes Python code quality using the **Google Gemini API** with function calling. The agent reasons about which analysis tools to call, executes them via a manual tool-use loop, and synthesizes a final report with a quality score.
 
-> **Free tier:** Gemini 1.5 Flash — 60 requests/minute, no credit card required.
+> **Free tier:** Gemini 2.5 Flash — 60 requests/minute, no credit card required.
 
 ## Architecture
 
@@ -22,7 +22,7 @@ Agent (agent.py)  ────────────────────�
     │  5. Repeat until Gemini returns text only (final report)      │
     │                                                               │
     ▼                                                               ▼
-Tools (tools.py)                                      Gemini 1.5 Flash
+Tools (tools.py)                                      Gemini 2.5 Flash
     ├── analyze_code_style()    — PEP 8 violations
     ├── detect_code_smells()   — Anti-patterns + severity
     └── suggest_improvements() — Refactoring by focus area
